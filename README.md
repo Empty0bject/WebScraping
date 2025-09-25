@@ -1,2 +1,6 @@
 # WebScraping
 Following the Medium introduction to building a webscraper (https://medium.com/@joerosborne/intro-to-web-scraping-build-your-first-scraper-in-5-minutes-1c36b5c4b110)
+
+The domain used is example.com because as stated in the article, many high trafic websites can have bot detection that can be hard to bypass
+In the future Id like to create a price comparison tool to help me in my day to day shopping, or when looking to shop online and find the best deal in a certain reveiw space, eg yarn less than £10 with more than 4 stars on amazon
+I have no prior knowledge of how webscrapers work so this is also a big learning opertunity for me, I thought this would also be a good first step in learning how to create an API
