@@ -8,6 +8,15 @@ I have no prior knowledge of how webscrapers work so this is also a big learning
 Following a text tutorial while also trying to demonstrate my learning can be difficult, as such Ill use most of the code directly from the article while commenting accordingly based on what i learn  
 
 
+# Meal Prepping app
 
 With how easy it was to create the webscraper, Id like to create a simple project to create a shopping list off the ingredients on a recipie site  
-Any plans will be attached in post
+Any plans will be attached in post  
+
+Website used in testing will be https://www.bbcgoodfood.com/recipes/chipotle-sweet-potato-black-bean-stew-cheddar-dumplings  
+As this is a personal project i see it as less important to have cross site functionality, and i like to use good food
+
+### Programming log
+Theres quite a big jump in difficulty on the good food website since theres naturally a lot more data in a much different format, I did however find a similar github repo to the project Im trying to create at (https://github.com/cameronjoejones/bbc-good-food-webscraper) so Ill do the same as earlier and adapt the code to this project, commenting along the way  
+- Unfortunately this didnt work  
+I am now attempting to convert to an lxml.etree object in order to use xpath data

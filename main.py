@@ -2,24 +2,19 @@
 
 import requests #requests the HTML from websites
 from bs4 import BeautifulSoup #makes the parsing and searching of the HTML (or XML) more intuative
+from lxml import etree
 
 
 def scrape():
-    url = 'https://www.example.com' #any given url, to the desired page
+    url = 'https://www.bbcgoodfood.com/recipes/chipotle-sweet-potato-black-bean-stew-cheddar-dumplings'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
-    #print(soup) outputs the page with its HTML formatting
-    search(soup)
+    dom = etree.HTML(str(soup))
+    search(dom)
 
-def search(soup):
-    title = soup.select_one('h1').text #selects the HTML in the specified formatting, in this case h1 is the header
-    text = soup.select_one('p').text
-    link = soup.select_one('a').get('href') #'href' meaning the page that any links point towards
-
-    print(title)
+def search(dom):
+    text = dom.xpath('/html/body/div[1]/div[5]/main/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/div[1]/div[2]/div[1]/section/section')[0].text
     print(text)
-    print(link)
-
 
 
 if __name__ == '__main__':
