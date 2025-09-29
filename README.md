@@ -20,6 +20,6 @@ As this is a personal project i see it as less important to have cross site func
 Theres quite a big jump in difficulty on the good food website since theres naturally a lot more data in a much different format, I did however find a similar github repo to the project Im trying to create at (https://github.com/cameronjoejones/bbc-good-food-webscraper) so Ill do the same as earlier and adapt the code to this project, commenting along the way  
 - Unfortunately this didnt work  
 I am now attempting to convert to an lxml.etree object in order to use xpath data
-- I think i may be a fool and was just looking at the wrong data when looking for the class i required, going back to using only bs4  
+- I think i may be a fool and was just looking at the wrong data when looking for the class i required, going back to using only bs4
 
-Now that i can find the desired information, i will begin creating the basic classes i want to use
+- <img width="1292" height="691" alt="image" src="https://github.com/user-attachments/assets/0df9c3c5-c7cc-44db-8517-bcb2ff5c3b40" />
