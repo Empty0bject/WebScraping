@@ -1,19 +1,18 @@
-#Main file
+from datause import UserDataProcess
 
-import requests #requests the HTML from websites
-from bs4 import BeautifulSoup #makes the parsing and searching of the HTML (or XML) more intuative
+class Main():
+    def __init__(self):
+        self.login= False
+    
+    def _addRecipe():
+        pass
 
+    def _viewRecipe():
+        pass
 
-def scrape():
-    url = 'https://www.bbcgoodfood.com/recipes/chipotle-sweet-potato-black-bean-stew-cheddar-dumplings'
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    search(soup)
-
-def search(soup):
-    ingredients = soup.find('ul', {'class': 'ingredients-list list'}).text
-    print(ingredients)
+    def _createMealPlan():
+        pass
 
 
 if __name__ == '__main__':
-    scrape()
+    Main()
