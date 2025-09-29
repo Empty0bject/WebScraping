@@ -21,3 +21,5 @@ Theres quite a big jump in difficulty on the good food website since theres natu
 - Unfortunately this didnt work  
 I am now attempting to convert to an lxml.etree object in order to use xpath data
 - I think i may be a fool and was just looking at the wrong data when looking for the class i required, going back to using only bs4
+
+- <img width="1292" height="691" alt="image" src="https://github.com/user-attachments/assets/0df9c3c5-c7cc-44db-8517-bcb2ff5c3b40" />
