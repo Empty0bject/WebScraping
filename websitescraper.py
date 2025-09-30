@@ -3,15 +3,20 @@ from bs4 import BeautifulSoup #makes the parsing and searching of the HTML (or X
 
 class WebsiteProcess():
     def __init__(self):
-        self.dataoutput=[[[]]]
-        __soup=[[]]
-        __datarequest=[[]]
-
+        self.dataoutput=[[]]
+        self.__soup=""
+        self.optionaldata=["Calories per serving","Prep time","Cook time","Servings per dish","Difficulty"]
+        self.datarequest=[]
 
     def request(websiteURL):
-        response = requests.get(websiteURL)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        return soup
+        try:
+            response = requests.get(websiteURL)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            WebsiteProcess.__soup=soup
+            return ""
+        except:
+            return "There is an issue with the URL or internet connection, please try again"
+            #new private funtion could be added to check for specific errors
 
     def parse(requestedData):
         pass
