@@ -1,5 +1,6 @@
 import sys
 from websitescraper import WebsiteProcess
+wb=WebsiteProcess()
 
 class Main():
     def __init__(self):
@@ -34,16 +35,16 @@ class Main():
 
             #Very rough system for now, check off which data the user would like saved
             print("Which data would you like to be included in the save? Please select Y/N\nThe input is not case sensitive")
-            for item in len(WebsiteProcess.optionaldata):
-                userrequest=(WebsiteProcess.optionaldata[item]+"?")
+            for item in range(len(wb.optionaldata)):
+                userrequest=input(wb.optionaldata[item]+"? ")
                 if userrequest.lower()=="y":
-                    WebsiteProcess.datarequest[item]=True
+                    wb.datarequest[item]=True
                 elif userrequest.lower()=="n":
-                    WebsiteProcess.datarequest[item]=False
+                    wb.datarequest[item]=False
                 else:
                     print("Please re-enter your answer using either 'y' or 'n'")
-                    item=-1
-            print(WebsiteProcess.datarequest)
+                    item=-2
+            print(wb.datarequest)
 
         elif recipeinputtype=="2":
             pass

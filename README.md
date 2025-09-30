@@ -23,3 +23,7 @@ I am now attempting to convert to an lxml.etree object in order to use xpath dat
 - I think i may be a fool and was just looking at the wrong data when looking for the class i required, going back to using only bs4
 
 - <img width="1292" height="691" alt="image" src="https://github.com/user-attachments/assets/0df9c3c5-c7cc-44db-8517-bcb2ff5c3b40" />
+
+- an error is occuring where a class attribute from website scraper isnt getting called in main
+- originally i thought this was an iteration error
+- the error comes from not correctly calling an instance for the class attributes

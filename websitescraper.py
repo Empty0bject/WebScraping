@@ -2,11 +2,11 @@ import requests #requests the HTML from websites
 from bs4 import BeautifulSoup #makes the parsing and searching of the HTML (or XML) more intuative
 
 class WebsiteProcess():
-    def __init__(self, __soup):
+    def __init__(self):
         self.dataoutput=[]
         self.optionaldata=["Calories per serving","Prep time","Cook time","Servings per dish","Difficulty"]
-        self.datarequest=[]
-        __soup=__soup
+        self.datarequest=["","","","",""]
+        __soup=""
 
     def request(websiteURL):
         try:
