@@ -1,9 +1,9 @@
+import sys
 from websitescraper import WebsiteProcess
 
 class Main():
     def __init__(self):
         self.login= False
-        self.quit= False
 
     def mainMenuDisplay():
         print("\n\n\tWelcome to MealPlanning\n\tSelect option\n1- Add Recipe\n2- View recipes\n3- Create a meal plan\n4. Quit")
@@ -15,7 +15,7 @@ class Main():
         elif menuinput=="3":
             Main._createMealPlan()
         elif menuinput=="4":
-            Main.quit= True
+            sys.exit("Program terminated")
         else:
             print("Please enter either 1, 2 or 3\n")
 
@@ -57,5 +57,5 @@ class Main():
         print("create meal plan")
 
 
-while __name__ == '__main__' and Main.quit!= True:
+while __name__ == '__main__':
     Main.mainMenuDisplay()
